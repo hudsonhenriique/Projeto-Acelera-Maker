@@ -21,6 +21,8 @@ namespace BankAccountSystem.Models
             Balance = balance;
         }
 
+        // Tenta sacar um valor do saldo. Retorna true se o saque foi efetuado,
+        // ou false caso o saldo seja insuficiente.
         public virtual bool Withdraw(decimal amount)
         {
             if (Balance >= amount)
