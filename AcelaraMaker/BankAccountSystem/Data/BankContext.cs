@@ -6,8 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BankAccountSystem.Data
 {
-    // DbContext é a classe principal do EF Core que coordena as operações do banco de dados.
-    // É como se fosse a ponte entre o código C# e o banco de dados SQLite
+    // DbContext classe principal do EF Core manda nas operações do banco de dados.
+    
     public class BankContext: DbContext
     {
         // DbSet representa uma tabela no banco de dados.

@@ -26,5 +26,12 @@ namespace BankAccountSystem.Utils
             Console.WriteLine(text);
             Console.ResetColor();
         }
+
+        public static void ShowMenuText(string text)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
     }
 }

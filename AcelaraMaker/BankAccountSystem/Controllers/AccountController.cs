@@ -11,6 +11,11 @@ namespace BankAccountSystem.Controllers
     {
         private readonly BankContext _context = new BankContext();
 
+        public AccountController()
+        {
+            _context.Database.EnsureCreated();
+        }
+
         public void Create(Account account)
         {
             _context.Accounts.Add(account);
@@ -29,15 +34,17 @@ namespace BankAccountSystem.Controllers
 
             foreach (var account in accounts)
             {
-                Console.WriteLine($"Número: {account.Number} | Tipo: {account.GetType().Name} | Titular: {account.HolderName} | Saldo: {account.Balance:C}");
+                string accountType = account is CheckingAccount ? "Conta Corrente" : "Conta Poupança";
+                Console.WriteLine($"Número: {account.Number} | Tipo: {accountType} | Titular: {account.HolderName} | Saldo: {account.Balance:C}");
             }
         }
         public void FindByNumber(int number)
             {
             var account = _context.Accounts.FirstOrDefault(a => a.Number == number);
+            string accountType = account is CheckingAccount ? "Conta Corrente" : "Conta Poupança";
 
             if (account != null)
-                Console.WriteLine($"Conta encontrada: Número: {account.Number} | Tipo: {account.GetType().Name} | Titular: {account.HolderName} | Saldo: {account.Balance:C}");
+                Console.WriteLine($"Conta encontrada: Número: {account.Number} | Tipo: {accountType} | Titular: {account.HolderName} | Saldo: {account.Balance:C}");
             else
                 Console.WriteLine($"Conta número {number} não encontrada.");            
             }
