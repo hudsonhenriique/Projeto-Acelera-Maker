@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="BankAccountSystem.Tests/BankAccountSystem.Tests.csproj" Id="35788103-235d-474f-a660-5d47e2f0434c" />
   <Project Path="BankAccountSystem/BankAccountSystem.csproj" />
 </Solution>
