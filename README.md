@@ -87,3 +87,9 @@ Navegue até a pasta de testes e execute o comando abaixo para verificar as vali
 cd BankAccountSystem.Tests
 dotnet test
 ```
+## 🔗 Conecte-se Comigo
+
+Acompanhe meu progresso e vamos trocar ideias!
+
+* **LinkedIn:** [Hudson Henrique](https://www.linkedin.com/in/hudsonhenri)
+* **GitHub:** [Hudson Henrique](https://github.com/hudsonhenriique)
