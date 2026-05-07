@@ -28,6 +28,27 @@ Este projeto compõe meu portfólio prático de desenvolvimento de sistemas, ind
 - **Testes:** xUnit (Testes Unitários)
 
 ---
+## 📂 Estrutura do Projeto
+
+```text
+BankAccountSystem/
+├── Models/
+├── Controllers/
+├── Repositories/
+├── Utils/
+├── Data/
+├── Program.cs
+└── BankAccountSystem.Tests/
+```
+---
+## 📌 Regras de Negócio
+
+- Não é permitido saque sem saldo disponível.
+- Conta corrente pode utilizar limite de cheque especial.
+- Transferências exigem saldo suficiente.
+- Conta poupança deve possuir dia de aniversário válido (1–31).
+  
+---
 
 ## 🏗️ Arquitetura e Boas Práticas
 
@@ -53,7 +74,7 @@ Este projeto compõe meu portfólio prático de desenvolvimento de sistemas, ind
 
 ### Pré-requisitos
 
-- .NET SDK **10.0.203** ou superior instalado
+- .NET SDK **10** (testado na versão **10.0.203**)
 
 ### Passos
 
